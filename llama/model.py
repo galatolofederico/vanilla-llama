@@ -89,8 +89,8 @@ class Attention(nn.Module):
             bias=False,
         )
         self.wo = nn.Linear(
-            args.dim,
             args.n_heads * self.head_dim,
+            args.dim,
             bias=False,
         )
 
